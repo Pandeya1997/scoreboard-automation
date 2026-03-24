@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <scoreboard>
+        <env>admin</env>
+        <browser>chrome</browser>
+    </scoreboard>
+
+    <environment_url>
+            <url_scoreboard>https://scorebordadminstage-ui.jaigovinda7.com</url_scoreboard>
+        <url_user>https://scorebrdstageusr-ui.jaigovinda7.com</url_user>
+    </environment_url>
+
+    <userlogincredentials>
+        <admin_userName>admin001</admin_userName>
+        <admin_password>adminPass</admin_password>
+        <manager_userName>Mad$83572143552</manager_userName>
+        <manager_password>P@ssword1!</manager_password>
+        <agent_userName>Mad@8359919287</agent_userName>
+        <agent_password>P@ssword1!</agent_password>
+    </userlogincredentials>
+
+    <databaseconfig>
+        <scoreboard_DBUrl>jdbc:mysql://13.205.56.59:3306/scoreboard_uat</scoreboard_DBUrl>
+    </databaseconfig>
+
+    <databaseuserconfig>
+        <scoreboard_DBUsername>scoreboard-uat-usr</scoreboard_DBUsername>
+        <scoreboard_DBPassword>jdbcdncjdncgbf</scoreboard_DBPassword>
+    </databaseuserconfig>
+</Configuration>

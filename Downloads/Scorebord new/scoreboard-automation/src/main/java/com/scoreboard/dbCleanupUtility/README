@@ -1,0 +1,61 @@
+============================= Database Cleanup Utility ==========================================
+
+==>Overview
+
+This utility is designed to clean up automation-created test data from the MySQL database.
+It safely deletes all records related to automation test execution, including:
+
+Agents
+Managers
+Venues
+Tournaments
+Players
+Teams
+Matches
+Related child records (comments, balls, squad data, stats, assignments, etc.)
+
+Important:
+This script deletes only data created for automation purposes (based on naming patterns like %Automation%).
+Production or real user data will NOT be affected if naming conventions are followed properly.
+
+===================================================================================================================
+
+cleanup/
+│
+├── CleanupQueries.java   -> Contains all DELETE query constants
+├── DBUtils.java          -> Handles MySQL database connection
+└── DbCleanup.java        -> Main class to execute cleanup script
+
+
+*********************************The script removes automation-related data from****************************
+
+user (Agents / Managers created via automation)
+match_assign_user
+comments
+pending_balls
+archived_pending_balls
+tournament
+tournament_venues
+tournament_teams
+tournament_player_stats
+venues
+team
+player
+team_player
+squad
+squad_team_players
+squad_match_players
+balls
+history_balls
+schedules
+matches
+
+
+
+
+================================================================================================================
+Update database credentials inside DBUtils.java
+
+jdbc:mysql://localhost:3306/your_database
+username
+password
