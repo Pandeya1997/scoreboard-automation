@@ -91,3 +91,138 @@ For open source projects, say how it is licensed.
 
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+
+# 🏏 Scoreboard Automation Framework
+
+## 📌 Overview
+
+This project is an automation framework designed to test and validate a **Scoreboard Management System**.
+It covers end-to-end testing for modules like Admin, Agent, Manager, and User.
+
+---
+
+## 🚀 Tech Stack
+
+* **Language:** Java
+* **Build Tool:** Maven
+* **Testing Framework:** TestNG / JUnit
+* **Automation:** Selenium WebDriver
+* **API Testing:** REST Assured
+* **BDD:** Cucumber
+* **Reporting:** Log4j
+
+---
+
+## 📂 Project Structure
+
+```
+scoreboard-automation/
+│
+├── src/main/java
+│   ├── constants
+│   ├── util
+│   ├── context
+│   └── dbCleanupUtility
+│
+├── src/test/java
+│   ├── admin
+│   ├── agent
+│   ├── manager
+│   └── user
+│
+├── src/test/resources
+│   ├── features
+│   └── test data
+│
+├── pom.xml
+└── README.md
+```
+
+---
+
+## ✅ Features
+
+* UI Automation (Selenium)
+* API Testing (REST Assured)
+* Database Validation
+* Parallel Execution Support
+* Modular & Scalable Framework
+* BDD Feature Files (Cucumber)
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone git@github.com:Pandeya1997/scoreboard-automation.git
+```
+
+### 2️⃣ Open Project
+
+* Import as **Maven Project** in IntelliJ / Eclipse
+
+### 3️⃣ Install Dependencies
+
+```bash
+mvn clean install
+```
+
+---
+
+## ▶️ How to Run Tests
+
+### Run all tests:
+
+```bash
+mvn test
+```
+
+### Run specific test:
+
+* Use TestNG XML or Runner class
+
+---
+
+## 📊 Test Modules Covered
+
+* Admin Module
+* Agent Module
+* Manager Module
+* User Module
+* Match & Tournament Management
+* Live Matches & Dashboard
+
+---
+
+## 🧪 Test Types
+
+* Functional Testing
+* API Testing
+* UI Testing
+* Load Testing
+
+---
+
+## 📌 Best Practices Used
+
+* Page Object Model (POM)
+* Reusable Utility Classes
+* Clean Code Structure
+* Logging & Reporting
+
+---
+
+## 👨‍💻 Author
+
+**Abhishek Pandey**
+QA Automation Engineer
+
+---
+
+## ⭐ Contribution
+
+Feel free to fork and contribute to this project.
+
+---
